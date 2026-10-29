@@ -12,7 +12,7 @@ scan, generated from the same catalog that serves
 
 - **65 rules** across 7 categories — 34 `required` (scored) and 31 `experimental` (reported, never scored).
 - Ruleset version `c12293cd6d02` (sha256 over every rule's code and version; a new value means the model changed, and CI runs tell 'website changed' from 'model changed' apart).
-- The open-source scanner [Scovant Core](https://github.com/Scovant/scovant-core) runs 68 diagnostic checks (50 readiness, 18 security)
+- The open-source scanner [Scovant Core](https://github.com/Scovant/scovant-core) runs 69 diagnostic checks (51 readiness, 18 security)
   and implements 56 of the 65 rules (its CLI gathers evidence for
   47 today, 9 of them only when the site publishes no
   MCP file), computing its Technical Readiness rating from the required ones
