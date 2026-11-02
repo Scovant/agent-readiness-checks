@@ -207,7 +207,7 @@ evidence about (every one `PARTIAL`). It is a mapping, not a compliance claim;
 ## Beyond static checks
 
 The checks above are what a scan can verify from the outside. Scovant's
-simulation layer goes further: real AI agents (a catalog of 15 LLM agents)
+simulation layer goes further: real AI agents (a catalog of 17 LLM agents)
 attempt actual purchase and booking flows, and CI integration compares every
 deploy against a baseline so agent-readiness regressions are caught before agents
 hit them in production. See [scovant.com](https://scovant.com) and the
