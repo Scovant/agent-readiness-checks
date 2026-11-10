@@ -10,11 +10,11 @@ scan, generated from the same catalog that serves
 `https://scovant.com/api/public/rules`. The interactive scoring page is
 [scovant.com/scoring](https://scovant.com/scoring).
 
-- **65 rules** across 7 categories — 34 `required` (scored) and 31 `experimental` (reported, never scored).
-- Ruleset version `c12293cd6d02` (sha256 over every rule's code and version; a new value means the model changed, and CI runs tell 'website changed' from 'model changed' apart).
+- **66 rules** across 7 categories — 34 `required` (scored) and 32 `experimental` (reported, never scored).
+- Ruleset version `10f22c96c48c` (sha256 over every rule's code and version; a new value means the model changed, and CI runs tell 'website changed' from 'model changed' apart).
 - The open-source scanner [Scovant Core](https://github.com/Scovant/scovant-core) runs 69 diagnostic checks (51 readiness, 18 security)
-  and implements 56 of the 65 rules (its CLI gathers evidence for
-  47 today, 9 of them only when the site publishes no
+  and implements 57 of the 66 rules (its CLI gathers evidence for
+  48 today, 9 of them only when the site publishes no
   MCP file), computing its Technical Readiness rating from the required ones
   (experimental rules and diagnostic markers report without weight); the other
   9 need Scovant Cloud's
@@ -104,7 +104,7 @@ OWASP = the OWASP Top 10 for Agentic Applications 2026 categories a rule is
 evidence about (every one `PARTIAL`). It is a mapping, not a compliance claim;
 `—` = the rule maps to no category.
 
-### discoverability (25)
+### discoverability (26)
 
 | Code | Severity | Maturity | Source | OWASP | Title |
 |---|---|---|---|---|---|
@@ -125,6 +125,7 @@ evidence about (every one `PARTIAL`). It is a mapping, not a compliance claim;
 | [`AGENT-ID-003`](https://scovant.com/rules/agent-id-003) | info | experimental | cloud | — | Signature headers reached the origin intact |
 | [`AGENT-ID-005`](https://scovant.com/rules/agent-id-005) | medium | experimental | cloud | ASI03 | Identity verification is not fail-closed |
 | [`AI-BOT-POLICY-005`](https://scovant.com/rules/ai-bot-policy-005) | info | experimental | cloud | — | Anonymous and declared-agent access differ |
+| [`AI-BOT-POLICY-006`](https://scovant.com/rules/ai-bot-policy-006) | info | experimental | core ≥ 0.25.0 | — | AI-training usage group conflicts with another declaration |
 | [`CONTENT-NEG-002`](https://scovant.com/rules/content-neg-002) | medium | experimental | core ≥ 0.8.0 | — | Content negotiation response inconsistent with its Content-Type |
 | [`CONTENT-NEG-004`](https://scovant.com/rules/content-neg-004) | low | experimental | core ≥ 0.8.0 | — | Markdown negotiation works but omits Vary: Accept |
 | [`CONTENT-SIGNAL-001`](https://scovant.com/rules/content-signal-001) | low | experimental | core ≥ 0.7.0 | — | Content-Signal directives are malformed |
