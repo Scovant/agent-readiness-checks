@@ -11,7 +11,7 @@ scan, generated from the same catalog that serves
 [scovant.com/scoring](https://scovant.com/scoring).
 
 - **66 rules** across 7 categories — 34 `required` (scored) and 32 `experimental` (reported, never scored).
-- Ruleset version `10f22c96c48c` (sha256 over every rule's code and version; a new value means the model changed, and CI runs tell 'website changed' from 'model changed' apart).
+- Ruleset version `6f356ce61f28` (sha256 over every rule's code and version; a new value means the model changed, and CI runs tell 'website changed' from 'model changed' apart).
 - The open-source scanner [Scovant Core](https://github.com/Scovant/scovant-core) runs 69 diagnostic checks (51 readiness, 18 security)
   and implements 57 of the 66 rules (its CLI gathers evidence for
   48 today, 9 of them only when the site publishes no
